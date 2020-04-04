@@ -12,11 +12,11 @@
   <!-- Google Fonts Roboto -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap">
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="{{ asset('public/test/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('test/css/bootstrap.min.css') }}">
   <!-- Material Design Bootstrap -->
-  <link rel="stylesheet" href="{{ asset('public/test/css/mdb.min.css') }}">
+  <link rel="stylesheet" href="{{ asset('test/css/mdb.min.css') }}">
   <!-- Your custom styles (optional) -->
-  <link rel="stylesheet" href="{{ asset('public/test/css/style.css') }}">
+  <link rel="stylesheet" href="{{ asset('test/css/style.css') }}">
 </head>
 <body>
 
@@ -33,13 +33,13 @@
   <!-- End your project here-->
 
   <!-- jQuery -->
-  <script type="text/javascript" src="{{ asset('public/test/js/jquery.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('test/js/jquery.min.js') }}"></script>
   <!-- Bootstrap tooltips -->
-  <script type="text/javascript" src="{{ asset('public/test/js/popper.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('test/js/popper.min.js') }}"></script>
   <!-- Bootstrap core JavaScript -->
-  <script type="text/javascript" src="{{ asset('public/test/js/bootstrap.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('test/js/bootstrap.min.js') }}"></script>
   <!-- MDB core JavaScript -->
-  <script type="text/javascript" src="{{ asset('public/test/js/mdb.min.js') }}"></script>
+  <script type="text/javascript" src="{{ asset('test/js/mdb.min.js') }}"></script>
   <!-- Your custom scripts (optional) -->
   <script type="text/javascript"></script>
 

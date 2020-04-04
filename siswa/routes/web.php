@@ -10,23 +10,13 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
-Route::get('/', 'StudentController@index')->name('home'); 
-Route::get('/create', 'StudentController@create')->name('create'); 
-Route::post('/create', 'StudentController@store')->name('store'); 
-Route::get('/edit/{siswaId}', 'StudentController@edit')->name('edit');
-Route::post('/update/{id}', 'StudentController@update')->name('update');
-Route::delete('/delete/{id}', 'StudentController@delete')->name('delete');
-
-
-
-
-
-
-
-
-Route::get('/loli', function () {
-    return "loli";
+Route::group([ 'middleware' => 'auth' ], function(){
+    Route::get('/', 'StudentController@index')->name('home'); 
+    Route::get('/create', 'StudentController@create')->name('create'); 
+    Route::post('/create', 'StudentController@store')->name('store'); 
+    Route::get('/edit/{siswaId}', 'StudentController@edit')->name('edit');
+    Route::post('/update/{id}', 'StudentController@update')->name('update');
+    Route::delete('/delete/{id}', 'StudentController@delete')->name('delete');
 });
 
 Route::get('/user/{id}', function ($id) {
