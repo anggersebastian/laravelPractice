@@ -69,7 +69,7 @@
     @endforeach
   </tbody>
 </table>      
-    {{ $students->links() }}
+    {{ $students->links("pagination") }}
 </div>
 
 @endsection
